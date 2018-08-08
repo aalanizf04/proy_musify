@@ -3,35 +3,54 @@
 	{
 		"selected_items":
 		[
+			[
+				"user",
+				"userStored"
+			],
+			[
+				"pa",
+				"password"
+			],
+			[
+				"param",
+				"params"
+			],
+			[
+				"S",
+				"SongSchema"
+			],
+			[
+				"Al",
+				"AlbumSchema"
+			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "app.js",
+			"file": "controllers/user.js",
 			"settings":
 			{
-				"buffer_size": 538,
+				"buffer_size": 1441,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "'use strict'\n\nvar mongoose= require('mongoose');\nvar Schema = mongoose.Schema;//posibilita definir esquemas de la base de datos, guardando los datos en objeto Schema guarda en una coleccion concreta\n\nvar UserSchema = Schema({\n\tname: String,\n\tsurname: String,\n\temail: String,\n\tpassword: String,\n\trole: String,\n\timage: String\n});\n\nmodule.exports = mongoose.model('User',UserSchema); //cuando se use el objeto",
-			"file": "models/user.js",
-			"file_size": 12,
-			"file_write_time": 131782134187775020,
+			"file": "routes/user.js",
 			"settings":
 			{
-				"buffer_size": 406,
+				"buffer_size": 253,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "index.js",
+			"file": "app.js",
 			"settings":
 			{
-				"buffer_size": 368,
+				"buffer_size": 516,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -68,11 +87,17 @@
 	},
 	"expanded_folders":
 	[
-		"/home/urbit-lenovo_03/Escritorio/proy_musify",
-		"/home/urbit-lenovo_03/Escritorio/proy_musify/models"
+		"/home/urbit-lenovo_03/Escritorio/Old Firefox Data/proy_musify",
+		"/home/urbit-lenovo_03/Escritorio/Old Firefox Data/proy_musify/routes"
 	],
 	"file_history":
 	[
+		"/home/urbit-lenovo_03/Escritorio/Old Firefox Data/proy_musify/index.js",
+		"/home/urbit-lenovo_03/Escritorio/Old Firefox Data/proy_musify/models/song.js",
+		"/home/urbit-lenovo_03/Escritorio/Old Firefox Data/proy_musify/models/user.js",
+		"/home/urbit-lenovo_03/Escritorio/Old Firefox Data/proy_musify/models/album.js",
+		"/home/urbit-lenovo_03/Escritorio/Old Firefox Data/proy_musify/app.js",
+		"/home/urbit-lenovo_03/Escritorio/Old Firefox Data/proy_musify/models/artist.js",
 		"/home/urbit-lenovo_03/Escritorio/proy_musify/models/user",
 		"/home/urbit-lenovo_03/Escritorio/proy_musify/index.js"
 	],
@@ -109,24 +134,24 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app.js",
+					"file": "controllers/user.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 538,
+						"buffer_size": 1441,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								538,
-								538
+								976,
+								976
 							]
 						],
 						"settings":
@@ -134,6 +159,35 @@
 							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
 						},
 						"translation.x": 0.0,
+						"translation.y": 180.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "routes/user.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 253,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								253,
+								253
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 1.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
@@ -141,48 +195,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "models/user.js",
+					"buffer": 2,
+					"file": "app.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 406,
+						"buffer_size": 516,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								406,
-								406
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 272.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "index.js",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 368,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
+								449,
+								449
 							]
 						],
 						"settings":
@@ -276,7 +302,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 167.0,
+	"side_bar_width": 145.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
