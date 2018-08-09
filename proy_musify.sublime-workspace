@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"a",
+				"authorization"
+			],
+			[
 				"user",
 				"userStored"
 			],
@@ -27,33 +31,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "controllers/user.js",
-			"settings":
-			{
-				"buffer_size": 1441,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "routes/user.js",
-			"settings":
-			{
-				"buffer_size": 253,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app.js",
-			"settings":
-			{
-				"buffer_size": 516,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -87,19 +64,32 @@
 	},
 	"expanded_folders":
 	[
-		"/home/urbit-lenovo_03/Escritorio/Old Firefox Data/proy_musify",
-		"/home/urbit-lenovo_03/Escritorio/Old Firefox Data/proy_musify/routes"
+		"/home/urbit-lenovo_03/Escritorio/proy_musify",
+		"/home/urbit-lenovo_03/Escritorio/proy_musify/controllers",
+		"/home/urbit-lenovo_03/Escritorio/proy_musify/middlewares",
+		"/home/urbit-lenovo_03/Escritorio/proy_musify/models",
+		"/home/urbit-lenovo_03/Escritorio/proy_musify/routes",
+		"/home/urbit-lenovo_03/Escritorio/proy_musify/services"
 	],
 	"file_history":
 	[
+		"/home/urbit-lenovo_03/Escritorio/proy_musify/middlewares/authenticated.js",
+		"/home/urbit-lenovo_03/Escritorio/proy_musify/services/jwt.js",
+		"/home/urbit-lenovo_03/Escritorio/proy_musify/node_modules/bson/browser_build/bson.js",
+		"/home/urbit-lenovo_03/Escritorio/proy_musify/routes/user.js",
+		"/home/urbit-lenovo_03/Escritorio/proy_musify/index.js",
+		"/home/urbit-lenovo_03/Escritorio/proy_musify/controllers/user.js",
+		"/home/urbit-lenovo_03/Escritorio/proy_musify/models/album.js",
+		"/home/urbit-lenovo_03/Escritorio/proy_musify/package.json",
+		"/home/urbit-lenovo_03/Escritorio/proy_musify/models/user.js",
+		"/home/urbit-lenovo_03/Escritorio/proy_musify/app.js",
 		"/home/urbit-lenovo_03/Escritorio/Old Firefox Data/proy_musify/index.js",
 		"/home/urbit-lenovo_03/Escritorio/Old Firefox Data/proy_musify/models/song.js",
 		"/home/urbit-lenovo_03/Escritorio/Old Firefox Data/proy_musify/models/user.js",
 		"/home/urbit-lenovo_03/Escritorio/Old Firefox Data/proy_musify/models/album.js",
 		"/home/urbit-lenovo_03/Escritorio/Old Firefox Data/proy_musify/app.js",
 		"/home/urbit-lenovo_03/Escritorio/Old Firefox Data/proy_musify/models/artist.js",
-		"/home/urbit-lenovo_03/Escritorio/proy_musify/models/user",
-		"/home/urbit-lenovo_03/Escritorio/proy_musify/index.js"
+		"/home/urbit-lenovo_03/Escritorio/proy_musify/models/user"
 	],
 	"find":
 	{
@@ -134,94 +124,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "controllers/user.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1441,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								976,
-								976
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 180.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "routes/user.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 253,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								253,
-								253
-							]
-						],
-						"settings":
-						{
-							"auto_name": "",
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 1.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 516,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								449,
-								449
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -302,7 +206,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 145.0,
+	"side_bar_width": 210.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
