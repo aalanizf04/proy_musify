@@ -7,8 +7,8 @@
 6 silly lifecycle proy_musify@1.0.0~prestart: no script for prestart, continuing
 7 info lifecycle proy_musify@1.0.0~start: proy_musify@1.0.0
 8 verbose lifecycle proy_musify@1.0.0~start: unsafe-perm in lifecycle true
-9 verbose lifecycle proy_musify@1.0.0~start: PATH: /usr/share/npm/bin/node-gyp-bin:/home/urbit-lenovo_03/Escritorio/proy_musify/node_modules/.bin:/home/urbit-lenovo_03/bin:/home/urbit-lenovo_03/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
-10 verbose lifecycle proy_musify@1.0.0~start: CWD: /home/urbit-lenovo_03/Escritorio/proy_musify
+9 verbose lifecycle proy_musify@1.0.0~start: PATH: /usr/share/npm/bin/node-gyp-bin:/home/alvaro/Escritorio/Facultad 8vo semestre/PPS/proy_musify/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
+10 verbose lifecycle proy_musify@1.0.0~start: CWD: /home/alvaro/Escritorio/Facultad 8vo semestre/PPS/proy_musify
 11 silly lifecycle proy_musify@1.0.0~start: Args: [ '-c', 'nodemon index.js' ]
 12 info lifecycle proy_musify@1.0.0~start: Failed to exec start script
 13 verbose stack Error: proy_musify@1.0.0 start: `nodemon index.js`
@@ -19,8 +19,8 @@
 13 verbose stack     at maybeClose (internal/child_process.js:821:16)
 13 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
 14 verbose pkgid proy_musify@1.0.0
-15 verbose cwd /home/urbit-lenovo_03/Escritorio/proy_musify
-16 error Linux 4.15.0-29-generic
+15 verbose cwd /home/alvaro/Escritorio/Facultad 8vo semestre/PPS/proy_musify
+16 error Linux 4.4.0-131-generic
 17 error argv "/usr/bin/nodejs" "/usr/bin/npm" "start"
 18 error node v4.2.6
 19 error npm  v3.5.2

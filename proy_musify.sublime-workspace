@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"update",
+				"updateUser"
+			],
+			[
 				"a",
 				"authorization"
 			],
@@ -31,6 +35,30 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "controllers/user.js",
+			"settings":
+			{
+				"buffer_size": 3357,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "routes/user.js",
+			"settings":
+			{
+				"buffer_size": 995,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "middlewares/authenticated.js",
+			"settings":
+			{
+				"buffer_size": 659,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -64,15 +92,23 @@
 	},
 	"expanded_folders":
 	[
-		"/home/urbit-lenovo_03/Escritorio/proy_musify",
-		"/home/urbit-lenovo_03/Escritorio/proy_musify/controllers",
-		"/home/urbit-lenovo_03/Escritorio/proy_musify/middlewares",
-		"/home/urbit-lenovo_03/Escritorio/proy_musify/models",
-		"/home/urbit-lenovo_03/Escritorio/proy_musify/routes",
-		"/home/urbit-lenovo_03/Escritorio/proy_musify/services"
+		"/home/alvaro/Escritorio/Facultad 8vo semestre/PPS/proy_musify",
+		"/home/alvaro/Escritorio/Facultad 8vo semestre/PPS/proy_musify/controllers",
+		"/home/alvaro/Escritorio/Facultad 8vo semestre/PPS/proy_musify/middlewares",
+		"/home/alvaro/Escritorio/Facultad 8vo semestre/PPS/proy_musify/services",
+		"/home/alvaro/Escritorio/Facultad 8vo semestre/PPS/proy_musify/uploads",
+		"/home/alvaro/Escritorio/Facultad 8vo semestre/PPS/proy_musify/uploads/users"
 	],
 	"file_history":
 	[
+		"/home/alvaro/Escritorio/Facultad 8vo semestre/PPS/proy_musify/uploads/users/8kiD8EM0TqMy8uON6ZYlhSfa.jpg",
+		"/home/alvaro/Escritorio/Facultad 8vo semestre/PPS/proy_musify/routes/user.js",
+		"/home/alvaro/Escritorio/Facultad 8vo semestre/PPS/proy_musify/index.js",
+		"/home/alvaro/Escritorio/Facultad 8vo semestre/PPS/proy_musify/middlewares/authenticated.js",
+		"/home/alvaro/Escritorio/Facultad 8vo semestre/PPS/proy_musify/app.js",
+		"/home/alvaro/Escritorio/Facultad 8vo semestre/PPS/proy_musify/models/user.js",
+		"/home/alvaro/Escritorio/Facultad 8vo semestre/PPS/proy_musify/controllers/user.js",
+		"/home/alvaro/Escritorio/Facultad 8vo semestre/PPS/proy_musify/services/jwt.js",
 		"/home/urbit-lenovo_03/Escritorio/proy_musify/middlewares/authenticated.js",
 		"/home/urbit-lenovo_03/Escritorio/proy_musify/services/jwt.js",
 		"/home/urbit-lenovo_03/Escritorio/proy_musify/node_modules/bson/browser_build/bson.js",
@@ -124,8 +160,95 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "controllers/user.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3357,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3354,
+								3354
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1260.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "routes/user.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 995,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								973,
+								973
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "middlewares/authenticated.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 659,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								543,
+								543
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -206,7 +329,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 210.0,
+	"side_bar_width": 233.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

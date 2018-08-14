@@ -13,7 +13,7 @@ exports.createToken = function(user){ //pasa como parametro el objeto de usuario
 		role: user.role,
 		image: user.image,
 		iat: moment().unix(),
-		exp: moment().add(30,'seconds').unix()
+		exp: moment().add(30,'days').unix()
 	};
 
 	return jwt.encode(payload,secret);

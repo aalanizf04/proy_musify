@@ -68,11 +68,11 @@ function loginUser(req,res){
 								token: jwt.createToken(user)
 							});
 						}else{
-							res.status(404).send({message: 'Viene por aca'});							
-							//res.status(200).send({user})
+							//res.status(404).send({message: 'Viene por aca'});							
+							res.status(200).send({user})
 						}
 					}else{
-						res.status(404).send({message: 'El usuario no ha podido loggearse'});
+						res.status(404).send({message: 'El usuario no ha podido loggearse '+password+' '+user.password});
 					}
 				});
 			}
@@ -80,8 +80,40 @@ function loginUser(req,res){
 	})
 }
 
+function updateUser (req,res){
+	var update = req.body;
+	var userId = req.params.id;   // id es el nombre del campo que se pone en la ruta, si yo quiero cambiar este campo aqui, y en routes no cambio se produce el 404 del codigo
+	//params hace referencia a lo que viene luego de la rutas preestablecidas en routes/user.js
+
+	User.findByIdAndUpdate(userId,update, (err,userUpdated) => {
+		if(err){
+			res.status(500).send({message: 'Error al actualizar el usuario'});
+		}else{
+			if(!userUpdated){
+				res.status(404).send({message: 'No se ha podido actualizar el usuario'});
+			}else{
+				res.status(200).send({user: userUpdated});
+			}
+		}
+	});
+}
+
+function uploadImage(req,res){
+	var userId = req.params.id;
+	var file_name= 'No subido ...';
+
+	if(req.files){
+		var file_path= req.files.image.path;
+		console.log(file_path);
+	}else{
+		res.status(200).send({message: 'No has subido ninguna imagen'});
+	}
+}
+
 module.exports = {
 	pruebas,
 	saveUser,
-	loginUser
+	loginUser,
+	updateUser,
+	uploadImage
 };
