@@ -1,0 +1,51 @@
+<div *ngIf="identity" class="navigation col-lg-1">
+  <h1> Welcome to {{ 'the jungle' }}! </h1>
+</div>
+<div class="clearfix"></div>
+<div *ngIf="identity" class="central col-lg-11">
+    <p> Estas loggeado</p> 
+</div>
+
+
+<div class="row" *ngIf="!identity">
+  <div class="col-sm-6">
+    <h1> Login </h1>
+    <form class="col-md-7">
+      <p>
+        <label>Correo electronico:</label>
+        <input type="text" class="form-control" required/>
+      </p>
+
+      <p>
+        <label>Contraseña:</label>
+        <input type="password" class="form-control" required/>
+      </p>
+
+       <input type="submit" value="Entrar" class="btn btn-primary"/>
+    </form>
+  </div>
+
+  <div class="col-sm-6">
+    <h1> Register </h1>
+    <form class="col-md-7">
+      <p>
+        <label>Nombre:</label>
+        <input type="text" class="form-control" required/>
+      </p>
+      <p>
+        <label>Apellido:</label>
+        <input type="text" class="form-control" required/>
+      </p>
+      <p>
+        <label>Correo Electronico:</label>
+        <input type="text" class="form-control" required/>
+      </p>
+      <p>
+        <label>Contraseña:</label>
+        <input type="password" class="form-control" required/>
+      </p>
+
+       <input type="submit" value="Registrarse" class="btn btn-primary"/>
+    </form>
+  </div>
+</div>

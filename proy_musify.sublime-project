@@ -3,6 +3,9 @@
 	[
 		{
 			"path": "."
+		},
+		{
+			"path": "/home/urbit-lenovo_03/Escritorio/dashboard"
 		}
 	]
 }
