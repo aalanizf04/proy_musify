@@ -20,17 +20,20 @@ export class AppComponent implements OnInit{
   }
 
   public onSubmit(){
-  	console.log(this.user);
+  	//console.log(this.user);
+    //console.log(this._userService.signup(this.user));
     this._userService.signup(this.user).subscribe(
       response=>{
+        //console.log("viene por response");
         console.log(response);
-      })/*
+      },
       error=>{
         var errorMessage=<any> error;
         if(errorMessage!=null){
+        //console.log("viene por error");
         console.log(error);}
       }
-      );*/
+      ); 
   }
 
   public ngOnInit(){

@@ -18,7 +18,7 @@ export class UserService{
 	public signup(userToLogin, getHash=null){
 		let params = JSON.stringify(userToLogin);
 		let headers = new HttpHeaders({'Content-Type': 'application/json','Access-Control-Allow-Origin': '*'});
-
+		
 		return this._http.post(this.url+'/login',params,{headers:headers});
 	}
 
