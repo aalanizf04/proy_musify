@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"update",
+				"updateUser"
+			],
+			[
 				"a",
 				"authorization"
 			],
@@ -32,10 +36,26 @@
 	"buffers":
 	[
 		{
-			"file": "index.js",
+			"file": "cliente/musify/src/app/app.component.ts",
 			"settings":
 			{
-				"buffer_size": 402,
+				"buffer_size": 2723,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "cliente/musify/src/app/app.component.html",
+			"settings":
+			{
+				"buffer_size": 2470,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "cliente/musify/src/app/services/user.services.ts",
+			"settings":
+			{
+				"buffer_size": 1520,
 				"line_ending": "Unix"
 			}
 		}
@@ -72,19 +92,39 @@
 	},
 	"expanded_folders":
 	[
+		"/home/alvaro/Escritorio/Facultad 8vo semestre/PPS/proy_musify",
+		"/home/alvaro/Escritorio/Facultad 8vo semestre/PPS/proy_musify/cliente",
+		"/home/alvaro/Escritorio/Facultad 8vo semestre/PPS/proy_musify/cliente/musify",
+		"/home/alvaro/Escritorio/Facultad 8vo semestre/PPS/proy_musify/cliente/musify/src",
+		"/home/alvaro/Escritorio/Facultad 8vo semestre/PPS/proy_musify/cliente/musify/src/app",
+		"/home/alvaro/Escritorio/Facultad 8vo semestre/PPS/proy_musify/cliente/musify/src/app/services",
+		"/home/alvaro/Escritorio/Facultad 8vo semestre/PPS/proy_musify/cliente/musify/src/assets",
+		"/home/alvaro/Escritorio/Facultad 8vo semestre/PPS/proy_musify/cliente/musify/src/assets/css"
 	],
 	"file_history":
 	[
-		"/home/urbit-lenovo_03/Escritorio/proy_musify/models/user.js",
-		"/home/urbit-lenovo_03/Escritorio/proy_musify/models/artist.js",
-		"/home/urbit-lenovo_03/Escritorio/proy_musify/models/album.js",
+		"/home/alvaro/Escritorio/Facultad 8vo semestre/PPS/proy_musify/cliente/musify/src/assets/css/styles.css",
+		"/home/alvaro/Escritorio/Facultad 8vo semestre/PPS/proy_musify/api/controllers/user.js",
+		"/home/alvaro/Escritorio/Facultad 8vo semestre/PPS/proy_musify/cliente/musify/src/app/app.component.html",
+		"/home/alvaro/Escritorio/Compartido/cuarto.html",
+		"/home/alvaro/Descargas/tareaClase1.c",
+		"/home/alvaro/Escritorio/Facultad 8vo semestre/PPS/proy_musify/middlewares/authenticated.js",
+		"/home/alvaro/Escritorio/Facultad 8vo semestre/PPS/proy_musify/controllers/user.js",
+		"/home/alvaro/Escritorio/Facultad 8vo semestre/PPS/proy_musify/routes/user.js",
+		"/home/alvaro/Escritorio/Facultad 8vo semestre/PPS/proy_musify/uploads/users/8kiD8EM0TqMy8uON6ZYlhSfa.jpg",
+		"/home/alvaro/Escritorio/Facultad 8vo semestre/PPS/proy_musify/index.js",
+		"/home/alvaro/Escritorio/Facultad 8vo semestre/PPS/proy_musify/app.js",
+		"/home/alvaro/Escritorio/Facultad 8vo semestre/PPS/proy_musify/models/user.js",
+		"/home/alvaro/Escritorio/Facultad 8vo semestre/PPS/proy_musify/services/jwt.js",
 		"/home/urbit-lenovo_03/Escritorio/proy_musify/middlewares/authenticated.js",
 		"/home/urbit-lenovo_03/Escritorio/proy_musify/services/jwt.js",
 		"/home/urbit-lenovo_03/Escritorio/proy_musify/node_modules/bson/browser_build/bson.js",
 		"/home/urbit-lenovo_03/Escritorio/proy_musify/routes/user.js",
 		"/home/urbit-lenovo_03/Escritorio/proy_musify/index.js",
 		"/home/urbit-lenovo_03/Escritorio/proy_musify/controllers/user.js",
+		"/home/urbit-lenovo_03/Escritorio/proy_musify/models/album.js",
 		"/home/urbit-lenovo_03/Escritorio/proy_musify/package.json",
+		"/home/urbit-lenovo_03/Escritorio/proy_musify/models/user.js",
 		"/home/urbit-lenovo_03/Escritorio/proy_musify/app.js",
 		"/home/urbit-lenovo_03/Escritorio/Old Firefox Data/proy_musify/index.js",
 		"/home/urbit-lenovo_03/Escritorio/Old Firefox Data/proy_musify/models/song.js",
@@ -132,30 +172,91 @@
 			[
 				{
 					"buffer": 0,
-					"file": "index.js",
-					"semi_transient": true,
+					"file": "cliente/musify/src/app/app.component.ts",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 402,
+						"buffer_size": 2723,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								2482,
+								2482
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 748.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "cliente/musify/src/app/app.component.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2470,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1265,
+								1265
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 816.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "cliente/musify/src/app/services/user.services.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1520,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1484,
+								1484
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 561.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -238,7 +339,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 210.0,
+	"side_bar_width": 283.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
