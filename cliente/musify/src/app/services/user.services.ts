@@ -56,5 +56,15 @@ export class UserService{
 		return this._http.post(this.url+'/register',params,{headers:headers});
 	}
 
+	public update_user(userToUpdate){
+		let params = JSON.stringify(userToUpdate);
+		let headers = new HttpHeaders({
+			'Content-Type': 'application/json',
+			'Authorization':this.getToken()
+		});
+		
+		return this._http.post(this.url+'/update-user/'+userToUpdate._id,params,{headers:headers});
+	}
+
 }
 

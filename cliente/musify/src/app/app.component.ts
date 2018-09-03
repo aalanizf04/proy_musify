@@ -15,6 +15,7 @@ export class AppComponent implements OnInit{
   public identity;
   public token;
   public errorMessage;
+  public alertRegister;
 
   constructor(private _userService: UserService){
   	this.user= new User('','','','','','ROLE_USER','');
@@ -24,10 +25,15 @@ export class AppComponent implements OnInit{
   public onSubmit(){
 
     //conseguir los datos del usuario identificado
+
+    console.log(this.user);
     this._userService.signup(this.user).subscribe(
       response=>{
+        console.log(response);
         let identity = response.user;
         this.identity = identity;
+        console.log("ahora por aca ");
+        console.log(this.identity);
 
         if(!this.identity._id){
           alert("El usuario no esta correctamente identificado");
@@ -45,9 +51,7 @@ export class AppComponent implements OnInit{
                 }else{
                   //Crear elemento en el localstorage para tener token disponible
                   localStorage.setItem('token',token);
-
-                  //console.log(this.token);
-                  //console.log(this.identity);
+                  this.user= new User('','','','','','ROLE_USER','');
                   }
               },
               error=>{
@@ -76,9 +80,6 @@ export class AppComponent implements OnInit{
   public ngOnInit(){
     this.identity= this._userService.getIdentity();
     this.token=this._userService.getToken();
-
-    console.log(this.identity);
-    console.log(this.token);
     }
 
   public logout(){
@@ -87,12 +88,35 @@ export class AppComponent implements OnInit{
     localStorage.clear();
     this.identity= null;
     this.token=null;
+    this.user.gethash=null;
+    console.log("Identity y token: ");
+    console.log(this.identity);
+    console.log(this.token);
   }
 
   public onSubmitRegister(){
     console.log(this.user_register);
-    this._userService.register(this.user_register)
-  }
+    this._userService.register(this.user_register).subscribe(
+      response =>{
+        let user = response.user;
+        this.user_register=user;
 
+        if(!user._id){
+          this.alertRegister= 'error al registrarse';
+        }else{
+          this.alertRegister= 'Sin errores al registrarse, identificate con '+ this.user_register.email;
+          this.user_register= new User('','','','','','ROLE_USER','');
+        }
+      },
+      error=> {
+        var errorMessage=<any> error;
+
+        if(errorMessage!=null){
+          let fin= errorMessage.error.message;
+          this.alertRegister=fin;
+          }
+      }
+      );
+  }
 
 }
