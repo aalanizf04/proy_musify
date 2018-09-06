@@ -4,6 +4,8 @@ var User = require('../models/user');
 var bcrypt= require('bcrypt-nodejs'); //guardar la contraseña ya encriptada
 var jwt= require('../services/jwt');
 var mongoosePaginate= require('mongoose-pagination');
+var fs= require('fs');
+var path = require('path');
 
 function pruebas(req,res){
 	res.status(200).send({
@@ -85,6 +87,9 @@ function updateUser (req,res){
 	var update = req.body;
 	var userId = req.params.id;   // id es el nombre del campo que se pone en la ruta, si yo quiero cambiar este campo aqui, y en routes no cambio se produce el 404 del codigo
 	//params hace referencia a lo que viene luego de la rutas preestablecidas en routes/user.js
+	if(userId!=req.user.sub){
+		return res.status(500).send({message: 'No tienes permiso'}); //cuando detecta esto automaticamente se sale sin ejecutar las acciones de mas abajo
+	}
 
 	User.findByIdAndUpdate(userId,update, (err,userUpdated) => {
 		if(err){
@@ -106,6 +111,24 @@ function uploadImage(req,res){
 	if(req.files){
 		var file_path= req.files.image.path;
 		console.log(file_path);
+		var file_split = file_path.split('/');
+		console.log(file_split);
+		var file_name = file_split[2]; // nombre de la imagen con su extension
+
+		var ext_split= file_name.split('\.');
+		var file_ext=ext_split[1];
+
+		if(file_ext=='png'|| file_ext=='jpg' || file_ext=='gif'){
+			User.findByIdAndUpdate(userId, {image: file_name}, (err,UserUpdated) =>{
+				if(!UserUpdated){
+					res.status(404).send({message: 'No se ha podido subir la foto del usuario'});
+				}else{
+					res.status(200).send({user: UserUpdated});
+				}				
+			});
+		}else{
+			res.status(200).send({message: 'Extension del archivo no valida'});
+		}
 	}else{
 		res.status(200).send({message: 'No has subido ninguna imagen'});
 	}
@@ -130,11 +153,24 @@ function getUser(req,res){
 	});
 }
 
+function getImageFile(req,res){
+	var imageFile = req.params.imageFile;
+	var path_file='./uploads/users/'+imageFile;
+	fs.exists(path_file,function(exists){
+		if(exists){
+			res.sendFile(path.resolve(path_file));
+		}else{
+			res.status(200).send({message: "No existe la imagen ..."});
+		}
+	});
+}
+
 module.exports = {
 	pruebas,
 	saveUser,
 	loginUser,
 	updateUser,
 	uploadImage,
-	getUser
+	getUser,
+	getImageFile
 };

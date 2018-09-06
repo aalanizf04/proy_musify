@@ -13,7 +13,10 @@ api.post('/login',UserController.loginUser,function (req,res,next){
 	res.json({msg:'This is CORS-enabled for all origins!'})
 });
 api.put('/update-user/:id',md_auth.ensureAuth, UserController.updateUser); //:id hace referencia que el parametro que se espera es obligatorio, sino seria un "?" para un dato opcional
-api.post('/upload-image-user/:id',[md_auth.ensureAuth,md_upload], UserController.uploadImage); //:id hace referencia que el parametro que se espera es obligatorio, sino seria un "?" para un dato opcional
+api.post('/upload-image-user/:id',[md_auth.ensureAuth,md_upload], UserController.uploadImage,function (req,res,next){
+	res.json({msg:'This is CORS-enabled for all origins!'})
+});  //:id hace referencia que el parametro que se espera es obligatorio, sino seria un "?" para un dato opcional
 api.get('/users/:page',UserController.getUser);
+api.get('/get-image-user/:imageFile', UserController.getImageFile);
 
 module.exports= api;

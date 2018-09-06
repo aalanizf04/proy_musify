@@ -48,6 +48,7 @@ export class UserService{
 		}
 		return this.token;
 	}
+	
 
 	public register(userToRegister){
 		let params = JSON.stringify(userToRegister);
@@ -63,7 +64,7 @@ export class UserService{
 			'Authorization':this.getToken()
 		});
 		
-		return this._http.post(this.url+'/update-user/'+userToUpdate._id,params,{headers:headers});
+		return this._http.put(this.url+'/update-user/'+userToUpdate._id,params,{headers:headers});
 	}
 
 }

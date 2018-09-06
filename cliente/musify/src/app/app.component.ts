@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {User} from './models/user';
 import {UserService} from './services/user.services';
+import {GLOBAL} from './services/global';
 
 @Component({
   selector: 'app-root',
@@ -16,15 +17,17 @@ export class AppComponent implements OnInit{
   public token;
   public errorMessage;
   public alertRegister;
+  public url: string;
 
   constructor(private _userService: UserService){
   	this.user= new User('','','','','','ROLE_USER','');
     this.user_register= new User('','','','','','ROLE_USER','');
+    this.url= GLOBAL.url;
   }
 
   public onSubmit(){
-
-    //conseguir los datos del usuario identificado
+ 
+     //conseguir los datos del usuario identificado
 
     console.log(this.user);
     this._userService.signup(this.user).subscribe(
