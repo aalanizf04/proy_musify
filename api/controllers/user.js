@@ -123,7 +123,7 @@ function uploadImage(req,res){
 				if(!UserUpdated){
 					res.status(404).send({message: 'No se ha podido subir la foto del usuario'});
 				}else{
-					res.status(200).send({user: UserUpdated});
+					res.status(200).send({image:file_name, user: UserUpdated});
 				}				
 			});
 		}else{

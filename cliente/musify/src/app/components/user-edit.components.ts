@@ -47,7 +47,7 @@ export class UserEditComponent implements OnInit{
 					if(!this.filesToUpload){
 						//redireccion
 					}else{
-						this.makeFileRequest(this.url+'/upload-image-user/'+this.user._id,[], this.filesToUpload).then{
+						this.makeFileRequest(this.url+'/upload-image-user/'+this.user._id,[], this.filesToUpload).then(
 							(result: any)=> {
 								this.user.image=result.image;
 								console.log(this.user);
@@ -55,9 +55,9 @@ export class UserEditComponent implements OnInit{
 
 								let image_path= this.url+'/get-image-user/'+this.user.image;
 								document.getElementById('image-logged').setAttribute('src',image_path);
-								image_path=null;
+								//image_path=null;
 							}
-						};
+						);
 					}
 
           			this.alertMessage='El usuario se ha actualizado correctamente';
