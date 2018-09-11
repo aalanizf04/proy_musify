@@ -4,6 +4,66 @@
 		"selected_items":
 		[
 			[
+				"albums",
+				"albums"
+			],
+			[
+				"al",
+				"albumId"
+			],
+			[
+				"Access",
+				"Access-Control-Allow-Origin"
+			],
+			[
+				"art",
+				"artist"
+			],
+			[
+				"album",
+				"album"
+			],
+			[
+				"arti",
+				"artistRemoved"
+			],
+			[
+				"artis",
+				"artistRemoved"
+			],
+			[
+				"find",
+				"find"
+			],
+			[
+				"up",
+				"updateArtist"
+			],
+			[
+				"get",
+				"getArtists"
+			],
+			[
+				"save",
+				"saveArtist"
+			],
+			[
+				"tex",
+				"text-align\tproperty"
+			],
+			[
+				"text",
+				"text-transform\tproperty"
+			],
+			[
+				"fon",
+				"font-weight\tproperty"
+			],
+			[
+				"col",
+				"col-lg-11"
+			],
+			[
 				"update",
 				"updateUser"
 			],
@@ -36,35 +96,37 @@
 	"buffers":
 	[
 		{
-			"file": "cliente/musify/src/app/components/user-edit.components.ts",
+			"file": "api/controllers/artist.js",
 			"settings":
 			{
-				"buffer_size": 3159,
+				"buffer_size": 3486,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "api/index.js",
+			"file": "api/routes/artist.js",
 			"settings":
 			{
-				"buffer_size": 402,
+				"buffer_size": 823,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "cliente/musify/src/app/app.component.ts",
+			"file": "api/controllers/album.js",
 			"settings":
 			{
-				"buffer_size": 3597,
+				"buffer_size": 2205,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "cliente/musify/src/app/views/user-edit.html",
+			"file": "api/routes/album.js",
 			"settings":
 			{
-				"buffer_size": 1479,
+				"buffer_size": 663,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -104,14 +166,21 @@
 	[
 		"/home/urbit-lenovo_03/Escritorio/proy_musify",
 		"/home/urbit-lenovo_03/Escritorio/proy_musify/api",
-		"/home/urbit-lenovo_03/Escritorio/proy_musify/api/controllers"
+		"/home/urbit-lenovo_03/Escritorio/proy_musify/api/controllers",
+		"/home/urbit-lenovo_03/Escritorio/proy_musify/api/models"
 	],
 	"file_history":
 	[
+		"/home/urbit-lenovo_03/Escritorio/proy_musify/api/models/album.js",
+		"/home/urbit-lenovo_03/Escritorio/proy_musify/api/app.js",
 		"/home/urbit-lenovo_03/Escritorio/proy_musify/api/controllers/user.js",
-		"/home/urbit-lenovo_03/Escritorio/proy_musify/cliente/musify/src/app/services/user.services.ts",
-		"/home/urbit-lenovo_03/Escritorio/proy_musify/cliente/musify/src/app/app.component.html",
+		"/home/urbit-lenovo_03/Escritorio/proy_musify/cliente/musify/src/app/components/user-edit.components.ts",
 		"/home/urbit-lenovo_03/Escritorio/proy_musify/cliente/musify/src/app/app.component.ts",
+		"/home/urbit-lenovo_03/Escritorio/proy_musify/cliente/musify/src/app/app.component.html",
+		"/home/urbit-lenovo_03/Escritorio/proy_musify/cliente/musify/src/app/views/user-edit.html",
+		"/home/urbit-lenovo_03/Escritorio/proy_musify/cliente/musify/src/assets/css/styles.css",
+		"/home/urbit-lenovo_03/Escritorio/proy_musify/cliente/musify/src/styles.css",
+		"/home/urbit-lenovo_03/Escritorio/proy_musify/cliente/musify/src/app/services/user.services.ts",
 		"/home/alvaro/Escritorio/Facultad 8vo semestre/PPS/proy_musify/cliente/musify/src/assets/css/styles.css",
 		"/home/alvaro/Escritorio/Facultad 8vo semestre/PPS/proy_musify/api/controllers/user.js",
 		"/home/alvaro/Escritorio/Facultad 8vo semestre/PPS/proy_musify/cliente/musify/src/app/app.component.html",
@@ -145,7 +214,7 @@
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
@@ -159,6 +228,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"user-edit"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -176,46 +246,44 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "cliente/musify/src/app/components/user-edit.components.ts",
+					"file": "api/controllers/artist.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3159,
+						"buffer_size": 3486,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1841,
-								1841
+								1147,
+								1147
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
-							"translate_tabs_to_spaces": false,
-							"use_tab_stops": false
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "api/index.js",
-					"semi_transient": true,
+					"file": "api/routes/artist.js",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 402,
+						"buffer_size": 823,
 						"regions":
 						{
 						},
@@ -224,6 +292,64 @@
 							[
 								0,
 								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "api/controllers/album.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2205,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2202,
+								2202
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 360.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "api/routes/album.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 663,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								663,
+								663
 							]
 						],
 						"settings":
@@ -236,80 +362,13 @@
 					},
 					"stack_index": 0,
 					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "cliente/musify/src/app/app.component.ts",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3597,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true,
-							"use_tab_stops": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1080.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "cliente/musify/src/app/views/user-edit.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1479,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1110,
-								1110
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true,
-							"typescript_plugin_format_options":
-							{
-								"convertTabsToSpaces": false,
-								"indentSize": 4,
-								"tabSize": 4
-							}
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
 				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 24.0
 	},
 	"input":
 	{
@@ -350,7 +409,7 @@
 	"project": "proy_musify.sublime-project",
 	"replace":
 	{
-		"height": 0.0
+		"height": 44.0
 	},
 	"save_all_on_build": true,
 	"select_file":

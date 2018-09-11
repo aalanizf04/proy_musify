@@ -9,7 +9,7 @@ var AlbumSchema = Schema({
 	year: Number,
 	artist: {
 		type: Schema.ObjectId, //guarda un Id de objeto o documento de la bd
-		ref: 'Artist'}			//de tipo Artist, asocia Artist con Object
+		ref: 'Artist'},			//de tipo Artist, asocia Artist con Object
 	image: String
 });
 

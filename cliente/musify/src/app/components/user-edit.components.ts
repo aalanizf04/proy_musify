@@ -54,7 +54,7 @@ export class UserEditComponent implements OnInit{
 								localStorage.setItem('identity',JSON.stringify(this.user));
 
 								let image_path= this.url+'/get-image-user/'+this.user.image;
-								document.getElementById('image-logged').setAttribute('src',image_path);
+								//document.getElementById('image-logged').setAttribute('src',image_path);
 								//image_path=null;
 							}
 						);

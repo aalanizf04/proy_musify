@@ -1,7 +1,8 @@
 <div *ngIf="identity" class="navigation col-lg-1">
-  <h1> Welcome to {{ title }}! </h1>
+  <h1 class="head-title"> <a [routerLink]="['/']">
+    <span class="glyphicon glyphicon-music" aria-hidden="true"></span> 
+  Welcome to {{ title }}! </a></h1>
   <nav id="navigation">
-
   </nav>
 
   <nav id="user_logged">
@@ -19,16 +20,13 @@
   </nav>
 </div>
 
-<div class="clearfix"></div>
-
 <div *ngIf="identity" class="central col-lg-11">
-    <p> Estas loggeado</p> 
     <router-outlet> </router-outlet>
 </div>
 
 
-<div class="row" *ngIf="!identity">
-  <div class="col-sm-6">
+<div class="col-lg-11" *ngIf="!identity">
+  <div class="col-lg-6">
     <h1> Login </h1>
     <div *ngIf=errorMessage>
       <div class="alert alert-success" role="alert"> {{errorMessage}}</div>
@@ -49,7 +47,7 @@
     </form>
   </div>
 
-  <div class="col-sm-6">
+  <div class="col-lg-6">
     <h1> Register </h1>
     <div *ngIf="alertRegister">
       <div class="alert alert-success" role="alert"> {{alertRegister}}</div>
