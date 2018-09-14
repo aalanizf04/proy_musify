@@ -1,32 +1,39 @@
-<div *ngIf="identity" class="navigation col-lg-1">
-  <h1 class="head-title"> <a [routerLink]="['/']">
-    <span class="glyphicon glyphicon-music" aria-hidden="true"></span> 
-  Welcome to {{ title }}! </a></h1>
-  <nav id="navigation">
-  </nav>
+<div class="container-fluid">
+  <div class="row">
+    
+    <div *ngIf="identity" class="navigation col-lg-2">
+      <nav id="navigation">
+      <a [routerLink]="['/artista']"> 
+        <span class="glyphicon glyphicon-music" aria-hidden="true"></span> 
+      <h1 class="head-title"> Welcome to {{ title }}! </h1></a>
+      </nav>
 
-  <nav id="user_logged">
-    <div class="user_image">
-        <img src="{{url + '/get-image-user/' + identity.image}}" style="width: 50px" />
-      </div>
-    <span id="identity_name">
-      {{identity.name}}
-    </span>
-    <span class="btn btn-warning" (click)="logout()">Cerrar sesion </span>
-    <a [routerLink]="['/mis-datos']">
-      <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> <!-- son configuraciones de bootstrap, despues ver esto porque no esta apareciendo el icono en la pagina-->
-      Mis datos
-    </a>
-  </nav>
+      <nav id="user_logged">
+        <div class="user_image">
+            <img src="{{url + '/get-image-user/' + identity.image}}" style="width: 50px" />
+        </div>
+        
+        <span id="identity_name"> 
+          {{identity.name}}
+        </span>
+        
+        <a [routerLink]="['/mis-datos']">
+          <span class="glyphicon glyphicon-music" aria-hidden="true"></span> <!-- son configuraciones de bootstrap, despues ver esto porque no esta apareciendo el icono en la pagina-->
+          Mis datos
+        </a>
+        <span class="btn btn-warning" (click)="logout()" [routerLink]="['/']"> Cerrar sesion </span>
+      </nav>
+    </div>
+
+    <div [class.hidden]="identity" class="col-lg-10">
+        <router-outlet> </router-outlet>
+    </div>
+
+  </div>
 </div>
 
-<div *ngIf="identity" class="central col-lg-11">
-    <router-outlet> </router-outlet>
-</div>
-
-
-<div class="col-lg-11" *ngIf="!identity">
-  <div class="col-lg-6">
+<div class="row" *ngIf="!identity">
+  <div class="col-sm-6">
     <h1> Login </h1>
     <div *ngIf=errorMessage>
       <div class="alert alert-success" role="alert"> {{errorMessage}}</div>

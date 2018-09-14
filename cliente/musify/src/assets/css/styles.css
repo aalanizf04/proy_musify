@@ -14,7 +14,48 @@ html ,body{
 
 .navigation{
 	text-align: center;
-	color: white;
+	color: orange;
 	background: #1c1c1f;
-	height: 100%;
+	height: 980px;
+}
+
+.head-title{
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;;
+	margin-bottom: 25px;
+	display: block;
+}
+.row{
+	font-size: 15px;
+	margin-left: 20px;
+	height:100%;
+	width: 100%;
+}
+.col-sm-6{
+	background: #25f12c;
+}
+
+.col-lg-6{
+	background: #1b5f90;
+}
+
+.central{
+	background: #9de4ff;
+	display: inline-block;
+	height:100%;
+	width: 100%;
+
+}
+
+.navigation a{
+	color: #ddd;
+/*	margin-top: 10px;
+*/	margin-bottom: 10px;
+	display: block;
+	text-decoration: none;
+}
+
+.navigation a:hover{ /*esto hace que cuando se pase el cursor por sobre el link cambie de color al determinado en el bloque*/
+	color: green;
 }

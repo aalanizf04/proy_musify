@@ -1,10 +1,10 @@
-<div class="col-lg-6">
+<div class="central">
     <h1> {{titulo}} </h1>
     <div *ngIf="alertMessage">
       <div class="alert alert-success" role="alert"> {{alertMessage}}</div>
     </div>
 
-    <form #userUpdateForm="ngForm" (ngSubmit)="onSubmit()" class="col-md-7">
+    <form #userUpdateForm="ngForm" (ngSubmit)="onSubmit()" class="col-lg-5">
       <p>
         <label>Nombre:</label>
         <input type="text" #name="ngModel" name="name" [(ngModel)]="user.name" class="form-control" required/>
@@ -23,7 +23,7 @@
 
       <div class="image_for_edit" *ngIf="user.image && user.image !='null'">
       	<h6>{{user.image}}</h6>
-      	<img src="{{url + '/get-image-user/' + user.image}}" style="width: 300px" />
+      	<img src="{{url + '/get-image-user/' + user.image}}" style="width: 50px" />
       </div>
 
       <p>
@@ -34,3 +34,4 @@
        <input type="submit" value="Actualizar mis datos" class="btn btn-primary"/>
     </form>
   </div>
+  

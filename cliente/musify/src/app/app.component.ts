@@ -3,6 +3,7 @@ import {User} from './models/user';
 import {UserService} from './services/user.services';
 import {GLOBAL} from './services/global';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -26,17 +27,12 @@ export class AppComponent implements OnInit{
   }
 
   public onSubmit(){
- 
      //conseguir los datos del usuario identificado
-
-    console.log(this.user);
     this._userService.signup(this.user).subscribe(
       response=>{
         console.log(response);
         let identity = response.user;
         this.identity = identity;
-        console.log("ahora por aca ");
-        console.log(this.identity);
 
         if(!this.identity._id){
           alert("El usuario no esta correctamente identificado");
@@ -92,9 +88,7 @@ export class AppComponent implements OnInit{
     this.identity= null;
     this.token=null;
     this.user.gethash=null;
-    console.log("Identity y token: ");
-    console.log(this.identity);
-    console.log(this.token);
+    this.alertRegister=null;
   }
 
   public onSubmitRegister(){

@@ -6,11 +6,14 @@ import {HttpClientModule} from '@angular/common/http';
 import { AppComponent } from './app.component';
 import {UserEditComponent} from './components/user-edit.components';
 import {routing, appRoutingProviders} from './app.routing';
+import {ArtistListComponent} from './components/artist-list.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserEditComponent
+    UserEditComponent,
+    ArtistListComponent
   ],
   imports: [
     BrowserModule,

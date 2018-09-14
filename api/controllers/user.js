@@ -67,8 +67,7 @@ function loginUser(req,res){
 					if(check){
 						if(params.gethash){	// si existe gethash, devuelve un token de jwt, se genera un token con el objeto del usuario (con todos los datos)
 							//devuelve un token de jwt
-							res.status(200).send({
-								token: jwt.createToken(user)
+							res.status(200).send({token: jwt.createToken(user)
 							});
 						}else{
 							//res.status(404).send({message: 'Viene por aca'});							
