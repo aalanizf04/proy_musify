@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import {UserEditComponent} from './components/user-edit.components';
 import {routing, appRoutingProviders} from './app.routing';
 import {ArtistListComponent} from './components/artist-list.component';
-
+import {CanActivateViaAuthGuard} from './services/guard.services';
 
 @NgModule({
   declarations: [
@@ -21,7 +21,7 @@ import {ArtistListComponent} from './components/artist-list.component';
     HttpClientModule,
     routing
   ],
-  providers: [appRoutingProviders],
+  providers: [appRoutingProviders, CanActivateViaAuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

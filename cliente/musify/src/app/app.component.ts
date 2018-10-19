@@ -60,6 +60,9 @@ export class AppComponent implements OnInit{
                   var body= JSON.parse(error._body);
                   this.errorMessage= body.message;
                   console.log(error);}
+              },
+              () => {
+                console.log("Termine")
               }
               ); 
           //Conseguir el token para enviarselo a cada peticion HTTP
@@ -82,6 +85,7 @@ export class AppComponent implements OnInit{
     }
 
   public logout(){
+    console.log("entro el logout");
     localStorage.removeItem('identity');
     localStorage.removeItem('token');
     localStorage.clear();
